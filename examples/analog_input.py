@@ -27,7 +27,7 @@ gpio = GPIO(debug=False)
 pin = 13
 analogpin = 14
 
-print 'Setting up all pins...'
+print('Setting up all pins...')
 
 # Set pin 14 to be used as an analog input GPIO pin.
 gpio.pinMode(analogpin, gpio.ANALOG_INPUT)
@@ -35,7 +35,7 @@ gpio.pinMode(analogpin, gpio.ANALOG_INPUT)
 # Set pin 13 to be used as an output GPIO pin.
 gpio.pinMode(pin, gpio.OUTPUT)
 
-print 'Analog reading from pin %d now...' % analogpin
+print('Analog reading from pin %d now...' % analogpin)
 try:
     while(True):
         # Read the voltage on pin 14
@@ -58,7 +58,7 @@ try:
 # When you get tired of seeing the led blinking kill the loop with Ctrl-C.
 except KeyboardInterrupt:
     # Leave the led turned off.
-    print '\nCleaning up...'
+    print('\nCleaning up...')
     gpio.digitalWrite(pin, gpio.LOW)
 
     # Do a general cleanup. Calling this function is not mandatory.

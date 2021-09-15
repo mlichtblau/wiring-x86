@@ -13,7 +13,7 @@ from distutils.core import setup
 
 setup(
     name='Wiring-x86',
-    version='1.0.0',
+    version='1.0.1',
     author='Nicolás Pernas Maradei',
     author_email='nicolas.pernas.maradei@emutex.com',
     url='https://github.com/emutex/wiring-x86',
@@ -24,6 +24,6 @@ setup(
     classifiers=[
         'License :: OSI Approved :: BSD License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.9',
     ],
 )

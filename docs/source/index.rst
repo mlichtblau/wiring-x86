@@ -41,10 +41,10 @@ Here is a simple example::
     state = gpio.HIGH
 
     # Set pin 13 to be used as an output GPIO pin.
-    print 'Setting up pin %d' % pin
+    print('Setting up pin %d' % pin)
     gpio.pinMode(pin, gpio.OUTPUT)
 
-    print 'Blinking pin %d now...' % pin
+    print('Blinking pin %d now...' % pin)
     try:
         while(True):
             # Write a state to the pin. ON or OFF.
@@ -59,7 +59,7 @@ Here is a simple example::
     # When you get tired of seeing the led blinking kill the loop with Ctrl-C.
     except KeyboardInterrupt:
         # Leave the led turned off.
-        print '\nCleaning up...'
+        print('\nCleaning up...')
         gpio.digitalWrite(pin, gpio.LOW)
 
         # Do a general cleanup. Calling this function is not mandatory.
