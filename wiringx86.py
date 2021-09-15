@@ -509,6 +509,7 @@ class GPIOGalileoGen2(GPIOBase):
         17: 54,
         18: 56,
         19: 58,
+        63: 63,
     }
 
     ADC_MAPPING = {
@@ -550,6 +551,7 @@ class GPIOGalileoGen2(GPIOBase):
         17: ((55, NONE), ),
         18: ((78, HIGH), (60, HIGH), (57, NONE)),
         19: ((79, HIGH), (60, HIGH), (59, NONE)),
+        63: (),
     }
 
     GPIO_MUX_INPUT = {
@@ -573,6 +575,7 @@ class GPIOGalileoGen2(GPIOBase):
         17: ((55, NONE), ),
         18: ((78, HIGH), (60, HIGH), (57, NONE)),
         19: ((79, HIGH), (60, HIGH), (59, NONE)),
+        63: (),
     }
 
     GPIO_MUX_INPUT_PULLUP = {
@@ -596,6 +599,7 @@ class GPIOGalileoGen2(GPIOBase):
         17: ((55, HIGH), ),
         18: ((78, HIGH), (60, HIGH), (57, HIGH)),
         19: ((79, HIGH), (60, HIGH), (59, HIGH)),
+        63: (),
     }
 
     GPIO_MUX_INPUT_PULLDOWN = {
@@ -619,6 +623,7 @@ class GPIOGalileoGen2(GPIOBase):
         17: ((55, LOW), ),
         18: ((78, HIGH), (60, HIGH), (57, LOW)),
         19: ((79, HIGH), (60, HIGH), (59, LOW)),
+        63: (),
     }
 
     GPIO_MUX_ANALOG_INPUT = {
